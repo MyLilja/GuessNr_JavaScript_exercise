@@ -1,27 +1,24 @@
 var randNumber = Math.floor(Math.random() * 100) + 1;
-
-console.log(randNumber);
+var guessLimit = 7;
 
 function guessingNumber() {
     var guess = document.getElementById("guessedNumber").value;
     document.getElementById("guessedNumber").value = "";
-    
-
-    console.log(guess);
 
     if(guess > randNumber){
         document.getElementById("info").innerHTML = "You need to go lower!"
+        guessLimit--; 
     }else if (guess < randNumber){
         document.getElementById("info").innerHTML = "You need to go higher!"
+        guessLimit--;
     } else {
         document.getElementById("info").innerHTML = "DING DING DING! You win!"
     }
-
-    guess.value = 0;
+    document.getElementById("guesses").value = guess;
 }
 
 function newGame(){
     randNumber = Math.floor(Math.random() * 100) + 1;
-    console.log(randNumber);
     document.getElementById("info").innerHTML = "";
+    guessLimit = 7;
 }
