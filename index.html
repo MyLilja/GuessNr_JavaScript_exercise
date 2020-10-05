@@ -7,39 +7,39 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="main.js"></script>
 </head>
-    <body>
-        <h1 class="header">Guess the number</h1>
-        <section>
-            <div class="container">
-                
-                    <h1 class="h1">Enter a number between 1-100</h1>
-                    <div class="inputContainer">
-                        <input style="font-size: 25px;" type="number" class="input" id="guessedNumber" placeholder="Enter a number"></input>
-                        <button style="font-size: 25px;" class="button" onClick="guessingNumber()" value="submit">Submit</button>
-                    </div>
-                
-            </div>                
-        </section>
-        <section style="padding: 0; margin: 0px;">
-            <div class="row">
-            <div class="block" style="margin-top: 20px; max-width: 100px; max-height: 100px; display: inline-block;">
-                <p class="textBox" id="guesses">hej</p>
+<body>
+    <h1 class="header">Guess the number</h1>
+    <section>
+        <div class="container">
+            
+            <h1 class="h1">Enter a number between 1-100</h1>
+            <div class="inputContainer">
+                <input style="font-size: 25px;" type="number" class="input" id="submit" placeholder="Enter a number"></input>
+                <button style="font-size: 25px;" class="button" onClick="guessingNumber()"; value="submit">Submit</button>
             </div>
-                <div class="block" style="margin-top: 20px; max-width: 50px; display: inline-block;">
-                    <p class="textBox" id="limit">hejsan</p>
-
-                </div>
+            
+        </div>                
+    </section>
+    <div class="row">
+        <div class="block" style="margin-top: 20px;">
+            <p style="margin: 0; padding: 15px; text-align: center; font-size: 20px; font-family: Nunito; color: aliceblue;">Previous numbers:</p>
+            <p class="textBox" style="padding: 0px; margin: auto; text-align: center; font-size: 20px; font-family: Nunito; color: aliceblue;" id="guesses"></p>
         </div>
-        </section>
-        <section style="padding: 0; margin: 0px;">
-            <div class="container" style="margin-top: 20px;">
-                <form class="form" style="height: 25px">              
-                    <p class="textField" id="info"></p>
-                </form>
-            </div>
-            <button style="font-size: 25px; margin: 25px auto; display: block;" class="button" onClick="newGame()">New Game</button>
-            </section>
-    </body>
+        <div class="block" style="margin-top: 20px;">
+            <p style="margin: 0; padding: 15px; text-align: center; font-size: 20px; font-family: Nunito; color: aliceblue;">Your limit:</p>
+            <p class="textBox" style="padding: 0px; margin: auto; text-align: center; font-size: 20px; font-family: Nunito; color: aliceblue;" id="limit"></p>
+        </div>
+    </div>
+    <section style="padding: 0; margin: 0px;">
+        <div class="container" style="margin-top: 20px;">
+            <form class="form" style="height: 100px; margin:auto; width: 80%;">              
+                <p class="textField" id="info" style="padding-bottom: 20px; font-size: 24px;"></p>
+                <p class="textField" id="numbersAPI" style="color: goldenrod; font-style: italic; font-size: 19px"></p>
+            </form>
+        </div>
+        <button style="font-size: 25px; margin: 25px auto; display: block;" class="button" onClick="newGame()">New Game</button>
+    </section>
+</body>
+<script type="text/javascript" src="main.js"></script>
 </html>
