@@ -27,7 +27,27 @@ section {
     margin: auto;
 }
 
-.form, textBox {
+.row {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.block {
+    width: 46%;
+    height: 120px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+    background-color: #165a5a; 
+    padding: 50;
+}
+
+.form {
     width: 50%;
     background-color: rgb(42, 41, 42);
     margin: 0 auto;
@@ -35,8 +55,16 @@ section {
     border-radius: 10px;
 }
 
+.textBox {
+    width: 50%;
+   
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .inputContainer {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     display: flex;   
 }
